@@ -231,6 +231,30 @@
             Można ją porównać do elektronicznego segregatora lub szafy z dokumentami — wszystko jest posegregowane,
             łatwe do znalezienia i przeszukania.
           </p>
+          <p>
+            W praktyce szkolnej baza danych może przechowywać listy uczniów, oceny, wypożyczenia z biblioteki,
+            harmonogramy zajęć lub ewidencję sprzętu. Ważne jest to, że dane są spójne i dostępne w jednym miejscu.
+          </p>
+          <p>
+            W języku informatyki rozróżniamy <strong>dane</strong> (surowe fakty) oraz <strong>informacje</strong>
+            (dane zinterpretowane w kontekście). Baza danych pomaga zamieniać dane w informacje, bo umożliwia
+            wyszukiwanie, filtrowanie i łączenie rekordów.
+          </p>
+          <ul>
+            <li><strong>Porządek</strong> – dane mają strukturę i są łatwe do uporządkowania.</li>
+            <li><strong>Spójność</strong> – te same informacje nie są sprzeczne w różnych miejscach.</li>
+            <li><strong>Bezpieczeństwo</strong> – można kontrolować dostęp do danych.</li>
+          </ul>
+          <aside class="notes">
+            Ten slajd wprowadzam bardzo spokojnie i „od życia”. Najpierw podkreślam różnicę między danymi a informacją.
+            Dane to fakty: „Jan Kowalski, klasa 2A, 15 punktów”. Informacja pojawia się, gdy wiemy, co te dane znaczą,
+            np. że Jan zaliczył sprawdzian na ocenę dobrą. W tym miejscu warto zapytać uczniów o przykłady baz danych,
+            z którymi spotykają się na co dzień: dziennik elektroniczny, lista kontaktów w telefonie, system rezerwacji.
+            Zwracam uwagę na trzy kluczowe pojęcia: porządek, spójność, bezpieczeństwo. Wyjaśniam, że bez spójności
+            system gubi prawdę – ta sama osoba może mieć dwie różne oceny w dwóch miejscach. Bez porządku nie da się
+            szybko wyszukać informacji. Bez bezpieczeństwa dane mogą zostać utracone lub niepowołanie ujawnione. To
+            tworzy fundament do dalszych zajęć i motywuje, dlaczego w ogóle uczymy się baz danych.
+          </aside>
         </section>
 
         <!-- Slajd 2: Czym jest tabela -->
@@ -242,6 +266,48 @@
           <p>
             Tabela przypomina arkusz kalkulacyjny: ma <em>wiersze</em> i <em>kolumny</em>.
           </p>
+          <p>
+            Każda tabela opisuje jeden typ obiektu, np. „Klienci”, „Zamówienia” albo „Uczniowie”. Dzięki temu dane są
+            czytelne i łatwe do utrzymania.
+          </p>
+          <p>
+            W dobrze zaprojektowanej tabeli każdy wiersz opisuje <strong>jeden obiekt</strong>, a każda kolumna
+            przechowuje <strong>jedną cechę</strong> tego obiektu. To porządkuje informacje i minimalizuje błędy.
+          </p>
+          <ul>
+            <li><strong>Wiersz</strong> = rekord, czyli pojedynczy obiekt (np. jeden klient).</li>
+            <li><strong>Kolumna</strong> = pole/atrybut, czyli cecha obiektu (np. e-mail).</li>
+            <li><strong>Schemat tabeli</strong> opisuje, jakie kolumny i typy danych są dozwolone.</li>
+          </ul>
+          <div class="small-text">
+            <h3>❓ Pytania kontrolne</h3>
+            <ol>
+              <li>
+                Który element tabeli reprezentuje jednego klienta?
+                <ul>
+                  <li>A) Kolumna</li>
+                  <li class="fragment">B) Rekord (wiersz)</li>
+                  <li>C) Nagłówek tabeli</li>
+                </ul>
+              </li>
+              <li>
+                Co opisuje schemat tabeli?
+                <ul>
+                  <li>A) Kolejność slajdów w prezentacji</li>
+                  <li class="fragment">B) Strukturę kolumn i typy danych</li>
+                  <li>C) Liczbę użytkowników w bazie</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <aside class="notes">
+            Na tym slajdzie wchodzę w podstawowy model relacyjny. Tłumaczę, że tabela opisuje jeden temat. Jeśli w jednej
+            tabeli mieszamy uczniów, przedmioty i oceny, to szybko pojawią się powtórzenia i bałagan. Zwracam uwagę na
+            pojęcie „schematu” – to przepis, który mówi, jakie kolumny i jakie typy danych mogą się pojawić. Dla liceum
+            to ważny element podstawy programowej: uczniowie mają rozumieć strukturę danych, a nie tylko je oglądać.
+            Omawiam analogię do arkusza kalkulacyjnego, ale podkreślam, że baza danych wprowadza reguły: nie wpiszemy
+            liter w pole liczbowe. To wstęp do pojęcia jakości danych i kontroli błędów.
+          </aside>
         </section>
 
         <!-- Slajd 3: Elementy tabeli -->
@@ -253,6 +319,19 @@
             <li><strong>Tabela</strong> – zbiór rekordów i kolumn, np. tabela „Klienci” zawiera dane wszystkich
               klientów.</li>
           </ul>
+          <ul>
+            <li><strong>Klucz główny</strong> – kolumna, która jednoznacznie identyfikuje rekord.</li>
+            <li><strong>Typ danych</strong> – ograniczenie, jakie wartości może przyjąć kolumna (tekst, liczba, data).</li>
+            <li><strong>Null</strong> – brak wartości, np. gdy pole nie jest jeszcze uzupełnione.</li>
+          </ul>
+          <aside class="notes">
+            Ten slajd porządkuje słownictwo. Zawsze proszę uczniów, by powiedzieli własnymi słowami, czym jest rekord i
+            kolumna. Następnie wprowadzam klucz główny. Tłumaczę, że to „numer PESEL” w świecie tabel – unikatowy,
+            niepowtarzalny, stabilny. To klucz do łączenia danych w większe całości. Omawiam typy danych: liczby,
+            teksty, daty. Wyjaśniam, dlaczego typ danych to nie formalność, ale mechanizm ochrony przed błędem
+            (np. nie da się wpisać „styczeń” do pola liczbowego). Wspominam o wartości NULL jako „braku informacji”
+            i podaję przykłady z życia: nie każdy klient ma e-mail, ale to nie znaczy, że rekord jest błędny.
+          </aside>
         </section>
 
         <!-- Slajd 4: Przykład tabeli -->
@@ -282,6 +361,41 @@
               </tr>
             </tbody>
           </table>
+          <p class="small-text">
+            <strong>ID</strong> pełni rolę klucza głównego — każda osoba ma inne ID, więc nie ma wątpliwości, o kogo
+            chodzi, nawet jeśli imię lub nazwisko się powtarza.
+          </p>
+          <p class="small-text">
+            W praktyce można wprowadzać reguły, np. unikalność adresu e-mail, aby uniknąć duplikatów.
+          </p>
+          <div class="small-text">
+            <h3>❓ Pytania kontrolne</h3>
+            <ol>
+              <li>
+                Która kolumna jest najlepszym kandydatem na klucz główny?
+                <ul>
+                  <li>A) Imię</li>
+                  <li class="fragment">B) ID</li>
+                  <li>C) Email</li>
+                </ul>
+              </li>
+              <li>
+                Dlaczego nie wystarczy używać samego nazwiska jako identyfikatora?
+                <ul>
+                  <li class="fragment">A) Nazwisko może się powtarzać</li>
+                  <li>B) Nazwisko nie jest tekstem</li>
+                  <li>C) Nazwisko nie może być kolumną</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <aside class="notes">
+            W tym miejscu pokazuję, że nawet prosta tabela ma logikę. ID to klucz główny — uczniowie muszą zrozumieć,
+            że nie jest to „kolejny numer w tabeli”, lecz identyfikator, który nie zmienia się nawet wtedy, gdy
+            klient zmieni nazwisko lub e-mail. Podkreślam problem duplikatów: w realnych danych mogą istnieć dwie osoby
+            o tym samym imieniu i nazwisku, dlatego potrzebujemy klucza. Wspominam o regułach unikalności (np. e-mail),
+            ale zaznaczam, że nawet e-mail może się zmienić. To przygotowuje grunt pod temat normalizacji i relacji.
+          </aside>
         </section>
 
         <!-- Slajd 5: Interpretacja tabeli -->
@@ -293,6 +407,46 @@
           <p>
             Dzięki takiej strukturze możemy łatwo przeszukiwać dane, sortować je, filtrować i analizować.
           </p>
+          <p>
+            W praktyce oznacza to, że możemy zadawać pytania typu: „Pokaż klientów z danego miasta” albo „Ułóż listę
+            według nazwiska”. To będzie podstawą do nauki zapytań SQL.
+          </p>
+          <div class="small-text">
+            <h3>❓ Pytania kontrolne</h3>
+            <ol>
+              <li>
+                Co opisuje pojedynczy wiersz w tabeli?
+                <ul>
+                  <li>A) Typ danych</li>
+                  <li class="fragment">B) Jednego klienta</li>
+                  <li>C) Zestaw wszystkich tabel</li>
+                </ul>
+              </li>
+              <li>
+                Filtrowanie danych służy do...
+                <ul>
+                  <li class="fragment">A) Wybrania tylko pasujących rekordów</li>
+                  <li>B) Usunięcia tabeli z bazy</li>
+                  <li>C) Zmiany typu danych w kolumnie</li>
+                </ul>
+              </li>
+              <li>
+                Sortowanie danych pozwala...
+                <ul>
+                  <li>A) Dodać nowe rekordy</li>
+                  <li class="fragment">B) Ułożyć rekordy w określonej kolejności</li>
+                  <li>C) Zmienić nazwy kolumn</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <aside class="notes">
+            Tutaj wprowadzam sposób „czytania” tabeli: wiersz to obiekt, kolumna to cecha. Następnie tłumaczę, czym
+            różni się filtrowanie od sortowania. Filtrowanie zawęża zbiór rekordów do tych spełniających warunek,
+            sortowanie jedynie zmienia kolejność. To idealny moment, by przygotować uczniów do klauzul WHERE i ORDER BY.
+            Podaję przykłady z życia: „pokaż tylko uczniów z oceną powyżej 4”, „ułóż listę alfabetycznie”. Zachęcam do
+            krótkiej dyskusji, bo to slajd o myśleniu analitycznym, a nie o samym SQL.
+          </aside>
         </section>
 
         <!-- Slajd 6: Co dalej? -->
@@ -302,6 +456,22 @@
             W kolejnych slajdach pokażemy, jak za pomocą języka SQL tworzyć takie tabele, dodawać dane, modyfikować je i
             wyszukiwać konkretne informacje.
           </p>
+          <p>
+            Nauczymy się też podstawowych operacji na danych, czyli <strong>CRUD</strong>:
+            Create (tworzenie), Read (odczyt), Update (aktualizacja), Delete (usuwanie). To fundament pracy z bazami
+            danych i baza do rozwiązywania zadań 7.1–7.5.
+          </p>
+          <p>
+            Zanim przejdziemy do praktyki, pamiętaj: dobra baza to taka, którą można bezpiecznie rozwijać. Dlatego
+            wstęp teoretyczny jest kluczowy — pozwala zrozumieć, dlaczego zapytania działają właśnie tak.
+          </p>
+          <aside class="notes">
+            Ten slajd domyka rozdział i buduje pomost do części praktycznej. Wyjaśniam, że SQL to język, którym „pytamy”
+            bazę danych. Wprowadzam akronim CRUD i krótko omawiam każdą literę. Podkreślam, że większość pracy z bazą
+            danych w praktyce zawodowej to właśnie odczyt i analiza danych, nie tylko ich wpisywanie. Zapowiadam, że
+            w kolejnych slajdach pokażemy konkretne polecenia i przykłady. To pomaga uczniom zrozumieć sens dalszych
+            ćwiczeń i przygotowuje ich do pracy w Accessie.
+          </aside>
         </section>
       </section>
       <!-- Slajd: Wprowadzenie -->
