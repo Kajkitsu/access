@@ -231,6 +231,15 @@
             Można ją porównać do elektronicznego segregatora lub szafy z dokumentami — wszystko jest posegregowane,
             łatwe do znalezienia i przeszukania.
           </p>
+          <aside class="notes">
+            Ten slajd wprowadzam bardzo spokojnie i „od życia”. Najpierw podkreślam różnicę między danymi a informacją.
+            Dane to fakty: „Jan Kowalski, klasa 2A, 15 punktów”. Informacja pojawia się, gdy wiemy, co te dane znaczą,
+            np. że Jan zaliczył sprawdzian na ocenę dobrą. W tym miejscu warto zapytać uczniów o przykłady baz danych,
+            z którymi spotykają się na co dzień: dziennik elektroniczny, lista kontaktów w telefonie, system rezerwacji.
+          </aside>
+        </section>
+        <section>
+          <h2>📚 Baza danych w praktyce</h2>
           <p>
             W praktyce szkolnej baza danych może przechowywać listy uczniów, oceny, wypożyczenia z biblioteki,
             harmonogramy zajęć lub ewidencję sprzętu. Ważne jest to, że dane są spójne i dostępne w jednym miejscu.
@@ -246,14 +255,10 @@
             <li><strong>Bezpieczeństwo</strong> – można kontrolować dostęp do danych.</li>
           </ul>
           <aside class="notes">
-            Ten slajd wprowadzam bardzo spokojnie i „od życia”. Najpierw podkreślam różnicę między danymi a informacją.
-            Dane to fakty: „Jan Kowalski, klasa 2A, 15 punktów”. Informacja pojawia się, gdy wiemy, co te dane znaczą,
-            np. że Jan zaliczył sprawdzian na ocenę dobrą. W tym miejscu warto zapytać uczniów o przykłady baz danych,
-            z którymi spotykają się na co dzień: dziennik elektroniczny, lista kontaktów w telefonie, system rezerwacji.
-            Zwracam uwagę na trzy kluczowe pojęcia: porządek, spójność, bezpieczeństwo. Wyjaśniam, że bez spójności
-            system gubi prawdę – ta sama osoba może mieć dwie różne oceny w dwóch miejscach. Bez porządku nie da się
-            szybko wyszukać informacji. Bez bezpieczeństwa dane mogą zostać utracone lub niepowołanie ujawnione. To
-            tworzy fundament do dalszych zajęć i motywuje, dlaczego w ogóle uczymy się baz danych.
+            Tutaj wracam do trzech pojęć: porządek, spójność, bezpieczeństwo. Wyjaśniam, że bez spójności system gubi
+            prawdę – ta sama osoba może mieć dwie różne oceny w dwóch miejscach. Bez porządku nie da się szybko
+            wyszukać informacji. Bez bezpieczeństwa dane mogą zostać utracone lub niepowołanie ujawnione. Ten slajd
+            domyka definicję i przygotowuje do rozmowy o strukturze danych.
           </aside>
         </section>
 
@@ -270,6 +275,13 @@
             Każda tabela opisuje jeden typ obiektu, np. „Klienci”, „Zamówienia” albo „Uczniowie”. Dzięki temu dane są
             czytelne i łatwe do utrzymania.
           </p>
+          <aside class="notes">
+            Na tym slajdzie wchodzę w podstawowy model relacyjny. Tłumaczę, że tabela opisuje jeden temat. Jeśli w jednej
+            tabeli mieszamy uczniów, przedmioty i oceny, to szybko pojawią się powtórzenia i bałagan.
+          </aside>
+        </section>
+        <section>
+          <h2>📋 Tabela jako model obiektu</h2>
           <p>
             W dobrze zaprojektowanej tabeli każdy wiersz opisuje <strong>jeden obiekt</strong>, a każda kolumna
             przechowuje <strong>jedną cechę</strong> tego obiektu. To porządkuje informacje i minimalizuje błędy.
@@ -279,8 +291,16 @@
             <li><strong>Kolumna</strong> = pole/atrybut, czyli cecha obiektu (np. e-mail).</li>
             <li><strong>Schemat tabeli</strong> opisuje, jakie kolumny i typy danych są dozwolone.</li>
           </ul>
+          <aside class="notes">
+            Zwracam uwagę na pojęcie „schematu” – to przepis, który mówi, jakie kolumny i jakie typy danych mogą się
+            pojawić. Dla liceum to ważny element podstawy programowej: uczniowie mają rozumieć strukturę danych, a nie
+            tylko je oglądać. Omawiam analogię do arkusza kalkulacyjnego, ale podkreślam, że baza danych wprowadza
+            reguły: nie wpiszemy liter w pole liczbowe. To wstęp do pojęcia jakości danych i kontroli błędów.
+          </aside>
+        </section>
+        <section>
+          <h2>✅ Pytania kontrolne: tabela</h2>
           <div class="small-text">
-            <h3>❓ Pytania kontrolne</h3>
             <ol>
               <li>
                 Który element tabeli reprezentuje jednego klienta?
@@ -301,12 +321,8 @@
             </ol>
           </div>
           <aside class="notes">
-            Na tym slajdzie wchodzę w podstawowy model relacyjny. Tłumaczę, że tabela opisuje jeden temat. Jeśli w jednej
-            tabeli mieszamy uczniów, przedmioty i oceny, to szybko pojawią się powtórzenia i bałagan. Zwracam uwagę na
-            pojęcie „schematu” – to przepis, który mówi, jakie kolumny i jakie typy danych mogą się pojawić. Dla liceum
-            to ważny element podstawy programowej: uczniowie mają rozumieć strukturę danych, a nie tylko je oglądać.
-            Omawiam analogię do arkusza kalkulacyjnego, ale podkreślam, że baza danych wprowadza reguły: nie wpiszemy
-            liter w pole liczbowe. To wstęp do pojęcia jakości danych i kontroli błędów.
+            To slajd stricte aktywizujący. Zatrzymuję się i proszę o krótkie odpowiedzi ustne. Dopiero po odpowiedziach
+            ujawniam poprawne warianty, korzystając z fragmentów.
           </aside>
         </section>
 
@@ -361,6 +377,13 @@
               </tr>
             </tbody>
           </table>
+          <aside class="notes">
+            Najpierw czytamy tabelę „na głos”: wiersze to konkretne osoby, kolumny to cechy. To buduje intuicję
+            przed rozmową o kluczu głównym.
+          </aside>
+        </section>
+        <section>
+          <h2>📊 Klucz główny i unikalność</h2>
           <p class="small-text">
             <strong>ID</strong> pełni rolę klucza głównego — każda osoba ma inne ID, więc nie ma wątpliwości, o kogo
             chodzi, nawet jeśli imię lub nazwisko się powtarza.
@@ -368,8 +391,17 @@
           <p class="small-text">
             W praktyce można wprowadzać reguły, np. unikalność adresu e-mail, aby uniknąć duplikatów.
           </p>
+          <aside class="notes">
+            W tym miejscu pokazuję, że nawet prosta tabela ma logikę. ID to klucz główny — uczniowie muszą zrozumieć,
+            że nie jest to „kolejny numer w tabeli”, lecz identyfikator, który nie zmienia się nawet wtedy, gdy
+            klient zmieni nazwisko lub e-mail. Podkreślam problem duplikatów: w realnych danych mogą istnieć dwie osoby
+            o tym samym imieniu i nazwisku, dlatego potrzebujemy klucza. Wspominam o regułach unikalności (np. e-mail),
+            ale zaznaczam, że nawet e-mail może się zmienić. To przygotowuje grunt pod temat normalizacji i relacji.
+          </aside>
+        </section>
+        <section>
+          <h2>✅ Pytania kontrolne: klucz główny</h2>
           <div class="small-text">
-            <h3>❓ Pytania kontrolne</h3>
             <ol>
               <li>
                 Która kolumna jest najlepszym kandydatem na klucz główny?
@@ -390,11 +422,8 @@
             </ol>
           </div>
           <aside class="notes">
-            W tym miejscu pokazuję, że nawet prosta tabela ma logikę. ID to klucz główny — uczniowie muszą zrozumieć,
-            że nie jest to „kolejny numer w tabeli”, lecz identyfikator, który nie zmienia się nawet wtedy, gdy
-            klient zmieni nazwisko lub e-mail. Podkreślam problem duplikatów: w realnych danych mogą istnieć dwie osoby
-            o tym samym imieniu i nazwisku, dlatego potrzebujemy klucza. Wspominam o regułach unikalności (np. e-mail),
-            ale zaznaczam, że nawet e-mail może się zmienić. To przygotowuje grunt pod temat normalizacji i relacji.
+            Po wyjaśnieniach z poprzedniego slajdu zadaję pytania kontrolne. Odpowiedzi ujawniam stopniowo fragmentami,
+            żeby utrzymać uwagę grupy.
           </aside>
         </section>
 
@@ -407,12 +436,26 @@
           <p>
             Dzięki takiej strukturze możemy łatwo przeszukiwać dane, sortować je, filtrować i analizować.
           </p>
+          <aside class="notes">
+            Tutaj wprowadzam sposób „czytania” tabeli: wiersz to obiekt, kolumna to cecha. Podkreślam, że to podstawowa
+            umiejętność analityczna potrzebna później przy SQL.
+          </aside>
+        </section>
+        <section>
+          <h2>📌 Praktyczne pytania o dane</h2>
           <p>
             W praktyce oznacza to, że możemy zadawać pytania typu: „Pokaż klientów z danego miasta” albo „Ułóż listę
             według nazwiska”. To będzie podstawą do nauki zapytań SQL.
           </p>
+          <aside class="notes">
+            Na przykładach pokazuję różnicę między filtrowaniem a sortowaniem. Filtrowanie zawęża zbiór rekordów do tych
+            spełniających warunek, sortowanie jedynie zmienia kolejność. To idealny moment, by przygotować uczniów do
+            klauzul WHERE i ORDER BY.
+          </aside>
+        </section>
+        <section>
+          <h2>✅ Pytania kontrolne: analiza tabeli</h2>
           <div class="small-text">
-            <h3>❓ Pytania kontrolne</h3>
             <ol>
               <li>
                 Co opisuje pojedynczy wiersz w tabeli?
@@ -441,11 +484,7 @@
             </ol>
           </div>
           <aside class="notes">
-            Tutaj wprowadzam sposób „czytania” tabeli: wiersz to obiekt, kolumna to cecha. Następnie tłumaczę, czym
-            różni się filtrowanie od sortowania. Filtrowanie zawęża zbiór rekordów do tych spełniających warunek,
-            sortowanie jedynie zmienia kolejność. To idealny moment, by przygotować uczniów do klauzul WHERE i ORDER BY.
-            Podaję przykłady z życia: „pokaż tylko uczniów z oceną powyżej 4”, „ułóż listę alfabetycznie”. Zachęcam do
-            krótkiej dyskusji, bo to slajd o myśleniu analitycznym, a nie o samym SQL.
+            Zatrzymuję się i proszę o krótkie odpowiedzi. Dopiero po dyskusji odsłaniam poprawne warianty.
           </aside>
         </section>
 
@@ -456,6 +495,13 @@
             W kolejnych slajdach pokażemy, jak za pomocą języka SQL tworzyć takie tabele, dodawać dane, modyfikować je i
             wyszukiwać konkretne informacje.
           </p>
+          <aside class="notes">
+            Ten slajd domyka rozdział i buduje pomost do części praktycznej. Wyjaśniam, że SQL to język, którym „pytamy”
+            bazę danych, i zapowiadam przejście do konkretnych poleceń.
+          </aside>
+        </section>
+        <section>
+          <h2>➡️ CRUD i fundament pracy z danymi</h2>
           <p>
             Nauczymy się też podstawowych operacji na danych, czyli <strong>CRUD</strong>:
             Create (tworzenie), Read (odczyt), Update (aktualizacja), Delete (usuwanie). To fundament pracy z bazami
@@ -466,11 +512,9 @@
             wstęp teoretyczny jest kluczowy — pozwala zrozumieć, dlaczego zapytania działają właśnie tak.
           </p>
           <aside class="notes">
-            Ten slajd domyka rozdział i buduje pomost do części praktycznej. Wyjaśniam, że SQL to język, którym „pytamy”
-            bazę danych. Wprowadzam akronim CRUD i krótko omawiam każdą literę. Podkreślam, że większość pracy z bazą
-            danych w praktyce zawodowej to właśnie odczyt i analiza danych, nie tylko ich wpisywanie. Zapowiadam, że
-            w kolejnych slajdach pokażemy konkretne polecenia i przykłady. To pomaga uczniom zrozumieć sens dalszych
-            ćwiczeń i przygotowuje ich do pracy w Accessie.
+            Wprowadzam akronim CRUD i krótko omawiam każdą literę. Podkreślam, że większość pracy z bazą danych w
+            praktyce zawodowej to odczyt i analiza danych, nie tylko ich wpisywanie. Ten slajd kończy teorię i
+            przygotowuje grupę do ćwiczeń praktycznych.
           </aside>
         </section>
       </section>
@@ -1704,11 +1748,13 @@ ORDER BY pr.nazwa;
 
   <!-- Reveal.js -->
   <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
   <script>
     Reveal.initialize({
       hash: true,
       slideNumber: true,
-      transition: 'slide'
+      transition: 'slide',
+      plugins: [ RevealNotes ]
     });
   </script>
 
