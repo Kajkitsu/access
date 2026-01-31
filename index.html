@@ -254,11 +254,16 @@
             <li><strong>Spójność</strong> – te same informacje nie są sprzeczne w różnych miejscach.</li>
             <li><strong>Bezpieczeństwo</strong> – można kontrolować dostęp do danych.</li>
           </ul>
+          <p class="small-text">
+            <small>Przykład: dane to „Alicja – 5 wypożyczeń”, a informacja to „Alicja jest najaktywniejszą czytelniczką”.</small>
+          </p>
           <aside class="notes">
-            Tutaj wracam do trzech pojęć: porządek, spójność, bezpieczeństwo. Wyjaśniam, że bez spójności system gubi
-            prawdę – ta sama osoba może mieć dwie różne oceny w dwóch miejscach. Bez porządku nie da się szybko
-            wyszukać informacji. Bez bezpieczeństwa dane mogą zostać utracone lub niepowołanie ujawnione. Ten slajd
-            domyka definicję i przygotowuje do rozmowy o strukturze danych.
+            Baza danych w praktyce to po prostu narzędzie do trzymania wielu informacji w jednym miejscu.
+            Dane to pojedyncze fakty, a informacja to sens, który z nich wyciągamy.
+            Gdy filtruję, sortuję i łączę rekordy, zamieniam dane w czytelne informacje.
+            Warto zapamiętać trzy filary: porządek, spójność i bezpieczeństwo.
+            Porządek ułatwia szybkie znalezienie potrzebnej rzeczy, spójność sprawia, że ta sama informacja nie różni się
+            w różnych miejscach, a bezpieczeństwo chroni przed utratą danych i dostępem niepowołanych osób.
           </aside>
         </section>
 
@@ -291,11 +296,14 @@
             <li><strong>Kolumna</strong> = pole/atrybut, czyli cecha obiektu (np. e-mail).</li>
             <li><strong>Schemat tabeli</strong> opisuje, jakie kolumny i typy danych są dozwolone.</li>
           </ul>
+          <p class="small-text">
+            <small>Przykład rekordu: ID=1, Imię=Jan, Nazwisko=Kowalski, E‑mail=jan.kowalski@example.com.</small>
+          </p>
           <aside class="notes">
-            Zwracam uwagę na pojęcie „schematu” – to przepis, który mówi, jakie kolumny i jakie typy danych mogą się
-            pojawić. Dla liceum to ważny element podstawy programowej: uczniowie mają rozumieć strukturę danych, a nie
-            tylko je oglądać. Omawiam analogię do arkusza kalkulacyjnego, ale podkreślam, że baza danych wprowadza
-            reguły: nie wpiszemy liter w pole liczbowe. To wstęp do pojęcia jakości danych i kontroli błędów.
+            W dobrze zaprojektowanej tabeli każdy wiersz opisuje jedną konkretną rzecz lub osobę.
+            Kolumny to cechy tej rzeczy, na przykład imię, nazwisko i e‑mail.
+            Schemat tabeli to zestaw zasad, które mówią, jakie kolumny istnieją i jakie wartości wolno w nich wpisywać.
+            Dzięki temu dane są uporządkowane i trudniej o pomyłkę, na przykład nie da się wpisać liter do pola liczbowego.
           </aside>
         </section>
         <section>
@@ -340,13 +348,15 @@
             <li><strong>Typ danych</strong> – ograniczenie, jakie wartości może przyjąć kolumna (tekst, liczba, data).</li>
             <li><strong>Null</strong> – brak wartości, np. gdy pole nie jest jeszcze uzupełnione.</li>
           </ul>
+          <p class="small-text">
+            <small>Najprościej: kolumny to pytania, a wiersze to komplet odpowiedzi dla jednej osoby.</small>
+          </p>
           <aside class="notes">
-            Ten slajd porządkuje słownictwo. Zawsze proszę uczniów, by powiedzieli własnymi słowami, czym jest rekord i
-            kolumna. Następnie wprowadzam klucz główny. Tłumaczę, że to „numer PESEL” w świecie tabel – unikatowy,
-            niepowtarzalny, stabilny. To klucz do łączenia danych w większe całości. Omawiam typy danych: liczby,
-            teksty, daty. Wyjaśniam, dlaczego typ danych to nie formalność, ale mechanizm ochrony przed błędem
-            (np. nie da się wpisać „styczeń” do pola liczbowego). Wspominam o wartości NULL jako „braku informacji”
-            i podaję przykłady z życia: nie każdy klient ma e-mail, ale to nie znaczy, że rekord jest błędny.
+            Ten slajd porządkuje podstawowe pojęcia, których będziemy używać cały czas.
+            Kolumna mówi, jaki rodzaj informacji zapisujemy, a rekord to komplet danych o jednym obiekcie.
+            Klucz główny to unikalny identyfikator, taki „numer dowodu” w tabeli, dzięki któremu nie mylimy osób.
+            Typ danych chroni przed błędami, bo narzuca format wartości: tekst, liczba albo data.
+            Wartość NULL oznacza brak informacji, co jest normalne — nie każdy klient musi mieć podany e‑mail.
           </aside>
         </section>
 
@@ -487,19 +497,6 @@
             Zatrzymuję się i proszę o krótkie odpowiedzi. Dopiero po dyskusji odsłaniam poprawne warianty.
           </aside>
         </section>
-
-        <!-- Slajd 6: Co dalej? -->
-        <section>
-          <h2>➡️ Co dalej?</h2>
-          <p>
-            W kolejnych slajdach pokażemy, jak za pomocą języka SQL tworzyć takie tabele, dodawać dane, modyfikować je i
-            wyszukiwać konkretne informacje.
-          </p>
-          <aside class="notes">
-            Ten slajd domyka rozdział i buduje pomost do części praktycznej. Wyjaśniam, że SQL to język, którym „pytamy”
-            bazę danych, i zapowiadam przejście do konkretnych poleceń.
-          </aside>
-        </section>
         <section>
           <h2>➡️ CRUD i fundament pracy z danymi</h2>
           <p>
@@ -511,10 +508,17 @@
             Zanim przejdziemy do praktyki, pamiętaj: dobra baza to taka, którą można bezpiecznie rozwijać. Dlatego
             wstęp teoretyczny jest kluczowy — pozwala zrozumieć, dlaczego zapytania działają właśnie tak.
           </p>
+          <ul class="small-text">
+            <li><strong>Create</strong> – dodaję nowego klienta do tabeli.</li>
+            <li><strong>Read</strong> – odczytuję listę klientów lub szukam konkretnej osoby.</li>
+            <li><strong>Update</strong> – zmieniam dane, np. aktualizuję adres e‑mail.</li>
+            <li><strong>Delete</strong> – usuwam rekord, gdy nie jest już potrzebny.</li>
+          </ul>
           <aside class="notes">
-            Wprowadzam akronim CRUD i krótko omawiam każdą literę. Podkreślam, że większość pracy z bazą danych w
-            praktyce zawodowej to odczyt i analiza danych, nie tylko ich wpisywanie. Ten slajd kończy teorię i
-            przygotowuje grupę do ćwiczeń praktycznych.
+            CRUD to cztery podstawowe czynności, które wykonuje się na danych.
+            Create to tworzenie nowych rekordów, Read to ich odczyt, Update to aktualizacja, a Delete to usuwanie.
+            W praktyce najczęściej czytamy i analizujemy dane, a dopiero potem je zmieniamy.
+            Ten slajd zamyka część teoretyczną i wprowadza nas w ćwiczenia praktyczne.
           </aside>
         </section>
       </section>
@@ -1752,6 +1756,7 @@ ORDER BY pr.nazwa;
   <script>
     Reveal.initialize({
       hash: true,
+      showNotes: true,
       slideNumber: true,
       transition: 'slide',
       plugins: [ RevealNotes ]
