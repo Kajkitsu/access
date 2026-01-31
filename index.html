@@ -230,13 +230,13 @@
           <small>
             Można ją porównać do elektronicznego segregatora lub szafy z dokumentami — wszystko jest posegregowane,
             łatwe do znalezienia i przeszukania.
-          </small>
           <ul class="small-text">
             <li><strong>Szkoła:</strong> dziennik elektroniczny z ocenami i obecnościami.</li>
             <li><strong>Telefon:</strong> książka kontaktów z numerami i e‑mailami.</li>
             <li><strong>Biblioteka:</strong> katalog książek i wypożyczeń.</li>
             <li><strong>Sklep:</strong> lista produktów, cen i stanów magazynowych.</li>
           </ul>
+        </small>
           <aside class="notes">
             Ten slajd wprowadzam bardzo spokojnie i „od życia”. Najpierw podkreślam różnicę między danymi a informacją.
             Dane to fakty: „Jan Kowalski, klasa 2A, 15 punktów”. Informacja pojawia się, gdy wiemy, co te dane znaczą,
@@ -272,12 +272,14 @@
             (dane zinterpretowane w kontekście). Baza danych pomaga zamieniać dane w informacje, bo umożliwia
             wyszukiwanie, filtrowanie i łączenie rekordów.
           </small>
+          <small></small>
           <ul>
             <li><strong>Porządek</strong> – dane mają strukturę i są łatwe do uporządkowania.</li>
             <li><strong>Spójność</strong> – te same informacje nie są sprzeczne w różnych miejscach.</li>
             <li><strong>Bezpieczeństwo</strong> – można kontrolować dostęp do danych.</li>
           </ul>
-          <small class="small-text">
+        </small>
+          <small>
             <small>Przykład: dane to „Alicja – 5 wypożyczeń”, a informacja to „Alicja jest najaktywniejszą czytelniczką”.</small>
           </small>
           <aside class="notes">
@@ -313,9 +315,9 @@
         </section>
         <section>
           <h2>🧩 Jedna tabela – jeden temat</h2>
-          <small>
+          <p>
             Gdy każdy temat ma osobną tabelę, łatwiej utrzymać porządek i uniknąć duplikatów.
-          </small>
+          </p>
           <ul class="small-text">
             <li><strong>Klienci</strong> – dane osobowe.</li>
             <li><strong>Zamówienia</strong> – informacje o zakupach.</li>
@@ -336,11 +338,13 @@
             W dobrze zaprojektowanej tabeli każdy wiersz opisuje <strong>jeden obiekt</strong>, a każda kolumna
             przechowuje <strong>jedną cechę</strong> tego obiektu. To porządkuje informacje i minimalizuje błędy.
           </small>
+          <small>
           <ul>
             <li><strong>Wiersz</strong> = rekord, czyli pojedynczy obiekt (np. jeden klient).</li>
             <li><strong>Kolumna</strong> = pole/atrybut, czyli cecha obiektu (np. e-mail).</li>
             <li><strong>Schemat tabeli</strong> opisuje, jakie kolumny i typy danych są dozwolone.</li>
           </ul>
+          </small>
           <small class="small-text">
             <small>Przykład rekordu: ID=1, Imię=Jan, Nazwisko=Kowalski, E‑mail=jan.kowalski@example.com.</small>
           </small>
@@ -382,6 +386,7 @@
         <!-- Slajd 3: Elementy tabeli -->
         <section>
           <h2>🔍 Elementy tabeli</h2>
+          <small>
           <ul>
             <li><strong>Kolumna</strong> – określa typ danych, np. imię, nazwisko, e-mail.</li>
             <li><strong>Rekord</strong> – jeden wiersz w tabeli, czyli jeden zestaw danych, np. jeden klient.</li>
@@ -393,6 +398,7 @@
             <li><strong>Typ danych</strong> – ograniczenie, jakie wartości może przyjąć kolumna (tekst, liczba, data).</li>
             <li><strong>Null</strong> – brak wartości, np. gdy pole nie jest jeszcze uzupełnione.</li>
           </ul>
+          </small>
           <small class="small-text">
             <small>Najprościej: kolumny to pytania, a wiersze to komplet odpowiedzi dla jednej osoby.</small>
           </small>
@@ -561,21 +567,23 @@
         </section>
         <section>
           <h2>➡️ CRUD i fundament pracy z danymi</h2>
-          <p>
-            Nauczymy się też podstawowych operacji na danych, czyli <strong>CRUD</strong>:
+          <small>
+                      Nauczymy się też podstawowych operacji na danych, czyli <strong>CRUD</strong>:
             Create (tworzenie), Read (odczyt), Update (aktualizacja), Delete (usuwanie). To fundament pracy z bazami
             danych i baza do rozwiązywania zadań 7.1–7.5.
-          </p>
-          <p>
+          </small>
+          <small></small>
             Zanim przejdziemy do praktyki, pamiętaj: dobra baza to taka, którą można bezpiecznie rozwijać. Dlatego
             wstęp teoretyczny jest kluczowy — pozwala zrozumieć, dlaczego zapytania działają właśnie tak.
-          </p>
+          </small>
+          <small>
           <ul class="small-text">
             <li><strong>Create</strong> – dodaję nowego klienta do tabeli.</li>
             <li><strong>Read</strong> – odczytuję listę klientów lub szukam konkretnej osoby.</li>
             <li><strong>Update</strong> – zmieniam dane, np. aktualizuję adres e‑mail.</li>
             <li><strong>Delete</strong> – usuwam rekord, gdy nie jest już potrzebny.</li>
           </ul>
+          </small>
           <aside class="notes">
             CRUD to cztery podstawowe czynności, które wykonuje się na danych.
             Create to tworzenie nowych rekordów, Read to ich odczyt, Update to aktualizacja, a Delete to usuwanie.
