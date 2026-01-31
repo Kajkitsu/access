@@ -224,13 +224,13 @@
       <section>
         <section>
           <h2>📚 Czym jest baza danych?</h2>
-          <p>
+          <small>
             <strong>Baza danych</strong> to uporządkowany zbiór informacji, który przechowujemy w sposób cyfrowy.
-          </p>
-          <p>
+          </small>
+          <small>
             Można ją porównać do elektronicznego segregatora lub szafy z dokumentami — wszystko jest posegregowane,
             łatwe do znalezienia i przeszukania.
-          </p>
+          </small>
           <ul class="small-text">
             <li><strong>Szkoła:</strong> dziennik elektroniczny z ocenami i obecnościami.</li>
             <li><strong>Telefon:</strong> książka kontaktów z numerami i e‑mailami.</li>
@@ -246,15 +246,15 @@
         </section>
         <section>
           <h2>📎 Dane i informacje — krótki przykład</h2>
-          <p>
+          <small>
             <strong>Dane:</strong> „Alicja, 5 wypożyczeń, ostatnia data: 12 stycznia”.
-          </p>
-          <p>
+          </small>
+          <small>
             <strong>Informacja:</strong> „Alicja regularnie korzysta z biblioteki i jest aktywną czytelniczką”.
-          </p>
-          <p class="small-text">
+          </small>
+          <small class="small-text">
             <small>To właśnie baza danych pozwala przejść od liczb i faktów do sensownych wniosków.</small>
-          </p>
+          </small>
           <aside class="notes">
             To prosty przykład, który pokazuje różnicę między surowymi danymi a informacją.
             Podkreślam, że sama liczba wypożyczeń jeszcze nic nie mówi, dopiero interpretacja daje znaczenie.
@@ -263,23 +263,23 @@
         </section>
         <section>
           <h2>📚 Baza danych w praktyce</h2>
-          <p>
+          <small>
             W praktyce szkolnej baza danych może przechowywać listy uczniów, oceny, wypożyczenia z biblioteki,
             harmonogramy zajęć lub ewidencję sprzętu. Ważne jest to, że dane są spójne i dostępne w jednym miejscu.
-          </p>
-          <p>
+          </small>
+          <small>
             W języku informatyki rozróżniamy <strong>dane</strong> (surowe fakty) oraz <strong>informacje</strong>
             (dane zinterpretowane w kontekście). Baza danych pomaga zamieniać dane w informacje, bo umożliwia
             wyszukiwanie, filtrowanie i łączenie rekordów.
-          </p>
+          </small>
           <ul>
             <li><strong>Porządek</strong> – dane mają strukturę i są łatwe do uporządkowania.</li>
             <li><strong>Spójność</strong> – te same informacje nie są sprzeczne w różnych miejscach.</li>
             <li><strong>Bezpieczeństwo</strong> – można kontrolować dostęp do danych.</li>
           </ul>
-          <p class="small-text">
+          <small class="small-text">
             <small>Przykład: dane to „Alicja – 5 wypożyczeń”, a informacja to „Alicja jest najaktywniejszą czytelniczką”.</small>
-          </p>
+          </small>
           <aside class="notes">
             Baza danych w praktyce to po prostu narzędzie do trzymania wielu informacji w jednym miejscu.
             Dane to pojedyncze fakty, a informacja to sens, który z nich wyciągamy.
@@ -293,19 +293,19 @@
         <!-- Slajd 2: Czym jest tabela -->
         <section>
           <h2>📋 Czym jest tabela?</h2>
-          <p>
+          <small>
             W bazie danych informacje są przechowywane w <strong>tabelach</strong>.
-          </p>
-          <p>
+          </small>
+          <small>
             Tabela przypomina arkusz kalkulacyjny: ma <em>wiersze</em> i <em>kolumny</em>.
-          </p>
-          <p>
+          </small>
+          <small>
             Każda tabela opisuje jeden typ obiektu, np. „Klienci”, „Zamówienia” albo „Uczniowie”. Dzięki temu dane są
             czytelne i łatwe do utrzymania.
-          </p>
-          <p class="small-text">
+          </small>
+          <small class="small-text">
             <small>Jedna tabela = jeden temat. To ogranicza powtórzenia i ułatwia późniejsze wyszukiwanie informacji.</small>
-          </p>
+          </small>
           <aside class="notes">
             Na tym slajdzie wchodzę w podstawowy model relacyjny. Tłumaczę, że tabela opisuje jeden temat. Jeśli w jednej
             tabeli mieszamy uczniów, przedmioty i oceny, to szybko pojawią się powtórzenia i bałagan.
@@ -313,17 +313,17 @@
         </section>
         <section>
           <h2>🧩 Jedna tabela – jeden temat</h2>
-          <p>
+          <small>
             Gdy każdy temat ma osobną tabelę, łatwiej utrzymać porządek i uniknąć duplikatów.
-          </p>
+          </small>
           <ul class="small-text">
             <li><strong>Klienci</strong> – dane osobowe.</li>
             <li><strong>Zamówienia</strong> – informacje o zakupach.</li>
             <li><strong>Produkty</strong> – lista towarów i cen.</li>
           </ul>
-          <p class="small-text">
+          <small class="small-text">
             <small>Potem takie tabele łączymy, gdy potrzebujemy pełnego obrazu.</small>
-          </p>
+          </small>
           <aside class="notes">
             Ten slajd wzmacnia zasadę „jeden temat = jedna tabela”.
             Dzięki temu dane są czytelne, łatwiejsze do aktualizacji i mniej podatne na błędy.
@@ -332,18 +332,18 @@
         </section>
         <section>
           <h2>📋 Tabela jako model obiektu</h2>
-          <p>
+          <small>
             W dobrze zaprojektowanej tabeli każdy wiersz opisuje <strong>jeden obiekt</strong>, a każda kolumna
             przechowuje <strong>jedną cechę</strong> tego obiektu. To porządkuje informacje i minimalizuje błędy.
-          </p>
+          </small>
           <ul>
             <li><strong>Wiersz</strong> = rekord, czyli pojedynczy obiekt (np. jeden klient).</li>
             <li><strong>Kolumna</strong> = pole/atrybut, czyli cecha obiektu (np. e-mail).</li>
             <li><strong>Schemat tabeli</strong> opisuje, jakie kolumny i typy danych są dozwolone.</li>
           </ul>
-          <p class="small-text">
+          <small class="small-text">
             <small>Przykład rekordu: ID=1, Imię=Jan, Nazwisko=Kowalski, E‑mail=jan.kowalski@example.com.</small>
-          </p>
+          </small>
           <aside class="notes">
             W dobrze zaprojektowanej tabeli każdy wiersz opisuje jedną konkretną rzecz lub osobę.
             Kolumny to cechy tej rzeczy, na przykład imię, nazwisko i e‑mail.
@@ -393,9 +393,9 @@
             <li><strong>Typ danych</strong> – ograniczenie, jakie wartości może przyjąć kolumna (tekst, liczba, data).</li>
             <li><strong>Null</strong> – brak wartości, np. gdy pole nie jest jeszcze uzupełnione.</li>
           </ul>
-          <p class="small-text">
+          <small class="small-text">
             <small>Najprościej: kolumny to pytania, a wiersze to komplet odpowiedzi dla jednej osoby.</small>
-          </p>
+          </small>
           <aside class="notes">
             Ten slajd porządkuje podstawowe pojęcia, których będziemy używać cały czas.
             Kolumna mówi, jaki rodzaj informacji zapisujemy, a rekord to komplet danych o jednym obiekcie.
@@ -412,9 +412,9 @@
           <p>
             Typ danych mówi, czy wpisujemy tekst, liczbę czy datę, a <strong>NULL</strong> oznacza brak informacji.
           </p>
-          <p class="small-text">
+          <small class="small-text">
             <small>To zasady, które porządkują dane i chronią przed pomyłkami.</small>
-          </p>
+          </small>
           <aside class="notes">
             W tym miejscu jeszcze raz porządkuję trzy pojęcia: klucz główny, typ danych i NULL.
             Klucz główny to identyfikator, typ danych pilnuje formatu, a NULL dopuszcza brak wartości.
