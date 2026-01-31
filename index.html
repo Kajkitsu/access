@@ -230,13 +230,15 @@
           <small>
             Można ją porównać do elektronicznego segregatora lub szafy z dokumentami — wszystko jest posegregowane,
             łatwe do znalezienia i przeszukania.
-          <ul class="small-text">
-            <li><strong>Szkoła:</strong> dziennik elektroniczny z ocenami i obecnościami.</li>
-            <li><strong>Telefon:</strong> książka kontaktów z numerami i e‑mailami.</li>
-            <li><strong>Biblioteka:</strong> katalog książek i wypożyczeń.</li>
-            <li><strong>Sklep:</strong> lista produktów, cen i stanów magazynowych.</li>
-          </ul>
-        </small>
+          </small>
+          <small>
+            <ul class="small-text">
+              <li><strong>Szkoła:</strong> dziennik elektroniczny z ocenami i obecnościami.</li>
+              <li><strong>Telefon:</strong> książka kontaktów z numerami i e‑mailami.</li>
+              <li><strong>Biblioteka:</strong> katalog książek i wypożyczeń.</li>
+              <li><strong>Sklep:</strong> lista produktów, cen i stanów magazynowych.</li>
+            </ul>
+          </small>
           <aside class="notes">
             Ten slajd wprowadzam bardzo spokojnie i „od życia”. Najpierw podkreślam różnicę między danymi a informacją.
             Dane to fakty: „Jan Kowalski, klasa 2A, 15 punktów”. Informacja pojawia się, gdy wiemy, co te dane znaczą,
@@ -272,22 +274,23 @@
             (dane zinterpretowane w kontekście). Baza danych pomaga zamieniać dane w informacje, bo umożliwia
             wyszukiwanie, filtrowanie i łączenie rekordów.
           </small>
-          <small></small>
+          <small>
           <ul>
             <li><strong>Porządek</strong> – dane mają strukturę i są łatwe do uporządkowania.</li>
             <li><strong>Spójność</strong> – te same informacje nie są sprzeczne w różnych miejscach.</li>
             <li><strong>Bezpieczeństwo</strong> – można kontrolować dostęp do danych.</li>
           </ul>
-        </small>
+          </small>
           <small>
-            <small>Przykład: dane to „Alicja – 5 wypożyczeń”, a informacja to „Alicja jest najaktywniejszą czytelniczką”.</small>
+            Przykład: dane to „Alicja – 5 wypożyczeń”, a informacja to „Alicja jest najaktywniejszą czytelniczką”.</small>
           </small>
           <aside class="notes">
             Baza danych w praktyce to po prostu narzędzie do trzymania wielu informacji w jednym miejscu.
             Dane to pojedyncze fakty, a informacja to sens, który z nich wyciągamy.
             Gdy filtruję, sortuję i łączę rekordy, zamieniam dane w czytelne informacje.
             Warto zapamiętać trzy filary: porządek, spójność i bezpieczeństwo.
-            Porządek ułatwia szybkie znalezienie potrzebnej rzeczy, spójność sprawia, że ta sama informacja nie różni się
+            Porządek ułatwia szybkie znalezienie potrzebnej rzeczy, spójność sprawia, że ta sama informacja nie różni
+            się
             w różnych miejscach, a bezpieczeństwo chroni przed utratą danych i dostępem niepowołanych osób.
           </aside>
         </section>
@@ -306,10 +309,12 @@
             czytelne i łatwe do utrzymania.
           </small>
           <small class="small-text">
-            <small>Jedna tabela = jeden temat. To ogranicza powtórzenia i ułatwia późniejsze wyszukiwanie informacji.</small>
+            <small>Jedna tabela = jeden temat. To ogranicza powtórzenia i ułatwia późniejsze wyszukiwanie
+              informacji.</small>
           </small>
           <aside class="notes">
-            Na tym slajdzie wchodzę w podstawowy model relacyjny. Tłumaczę, że tabela opisuje jeden temat. Jeśli w jednej
+            Na tym slajdzie wchodzę w podstawowy model relacyjny. Tłumaczę, że tabela opisuje jeden temat. Jeśli w
+            jednej
             tabeli mieszamy uczniów, przedmioty i oceny, to szybko pojawią się powtórzenia i bałagan.
           </aside>
         </section>
@@ -339,20 +344,19 @@
             przechowuje <strong>jedną cechę</strong> tego obiektu. To porządkuje informacje i minimalizuje błędy.
           </small>
           <small>
-          <ul>
-            <li><strong>Wiersz</strong> = rekord, czyli pojedynczy obiekt (np. jeden klient).</li>
-            <li><strong>Kolumna</strong> = pole/atrybut, czyli cecha obiektu (np. e-mail).</li>
-            <li><strong>Schemat tabeli</strong> opisuje, jakie kolumny i typy danych są dozwolone.</li>
-          </ul>
+            <ul>
+              <li><strong>Wiersz</strong> = rekord, czyli pojedynczy obiekt (np. jeden klient).</li>
+              <li><strong>Kolumna</strong> = pole/atrybut, czyli cecha obiektu (np. e-mail).</li>
+              <li><strong>Schemat tabeli</strong> opisuje, jakie kolumny i typy danych są dozwolone.</li>
+            </ul>
           </small>
-          <small class="small-text">
             <small>Przykład rekordu: ID=1, Imię=Jan, Nazwisko=Kowalski, E‑mail=jan.kowalski@example.com.</small>
-          </small>
           <aside class="notes">
             W dobrze zaprojektowanej tabeli każdy wiersz opisuje jedną konkretną rzecz lub osobę.
             Kolumny to cechy tej rzeczy, na przykład imię, nazwisko i e‑mail.
             Schemat tabeli to zestaw zasad, które mówią, jakie kolumny istnieją i jakie wartości wolno w nich wpisywać.
-            Dzięki temu dane są uporządkowane i trudniej o pomyłkę, na przykład nie da się wpisać liter do pola liczbowego.
+            Dzięki temu dane są uporządkowane i trudniej o pomyłkę, na przykład nie da się wpisać liter do pola
+            liczbowego.
           </aside>
         </section>
         <section>
@@ -387,17 +391,18 @@
         <section>
           <h2>🔍 Elementy tabeli</h2>
           <small>
-          <ul>
-            <li><strong>Kolumna</strong> – określa typ danych, np. imię, nazwisko, e-mail.</li>
-            <li><strong>Rekord</strong> – jeden wiersz w tabeli, czyli jeden zestaw danych, np. jeden klient.</li>
-            <li><strong>Tabela</strong> – zbiór rekordów i kolumn, np. tabela „Klienci” zawiera dane wszystkich
-              klientów.</li>
-          </ul>
-          <ul>
-            <li><strong>Klucz główny</strong> – kolumna, która jednoznacznie identyfikuje rekord.</li>
-            <li><strong>Typ danych</strong> – ograniczenie, jakie wartości może przyjąć kolumna (tekst, liczba, data).</li>
-            <li><strong>Null</strong> – brak wartości, np. gdy pole nie jest jeszcze uzupełnione.</li>
-          </ul>
+            <ul>
+              <li><strong>Kolumna</strong> – określa typ danych, np. imię, nazwisko, e-mail.</li>
+              <li><strong>Rekord</strong> – jeden wiersz w tabeli, czyli jeden zestaw danych, np. jeden klient.</li>
+              <li><strong>Tabela</strong> – zbiór rekordów i kolumn, np. tabela „Klienci” zawiera dane wszystkich
+                klientów.</li>
+            </ul>
+            <ul>
+              <li><strong>Klucz główny</strong> – kolumna, która jednoznacznie identyfikuje rekord.</li>
+              <li><strong>Typ danych</strong> – ograniczenie, jakie wartości może przyjąć kolumna (tekst, liczba, data).
+              </li>
+              <li><strong>Null</strong> – brak wartości, np. gdy pole nie jest jeszcze uzupełnione.</li>
+            </ul>
           </small>
           <small class="small-text">
             <small>Najprościej: kolumny to pytania, a wiersze to komplet odpowiedzi dla jednej osoby.</small>
@@ -568,21 +573,12 @@
         <section>
           <h2>➡️ CRUD i fundament pracy z danymi</h2>
           <small>
-                      Nauczymy się też podstawowych operacji na danych, czyli <strong>CRUD</strong>:
-            Create (tworzenie), Read (odczyt), Update (aktualizacja), Delete (usuwanie). To fundament pracy z bazami
-            danych i baza do rozwiązywania zadań 7.1–7.5.
-          </small>
-          <small></small>
-            Zanim przejdziemy do praktyki, pamiętaj: dobra baza to taka, którą można bezpiecznie rozwijać. Dlatego
-            wstęp teoretyczny jest kluczowy — pozwala zrozumieć, dlaczego zapytania działają właśnie tak.
-          </small>
-          <small>
-          <ul class="small-text">
-            <li><strong>Create</strong> – dodaję nowego klienta do tabeli.</li>
-            <li><strong>Read</strong> – odczytuję listę klientów lub szukam konkretnej osoby.</li>
-            <li><strong>Update</strong> – zmieniam dane, np. aktualizuję adres e‑mail.</li>
-            <li><strong>Delete</strong> – usuwam rekord, gdy nie jest już potrzebny.</li>
-          </ul>
+            <ul class="small-text">
+              <li><strong>Create</strong> – dodaję nowego klienta do tabeli.</li>
+              <li><strong>Read</strong> – odczytuję listę klientów lub szukam konkretnej osoby.</li>
+              <li><strong>Update</strong> – zmieniam dane, np. aktualizuję adres e‑mail.</li>
+              <li><strong>Delete</strong> – usuwam rekord, gdy nie jest już potrzebny.</li>
+            </ul>
           </small>
           <aside class="notes">
             CRUD to cztery podstawowe czynności, które wykonuje się na danych.
@@ -1216,7 +1212,7 @@ GROUP BY Klienci.Nazwisko;
         <h1>💡 Dziękuję za uwagę!</h1>
         <p>Spróbuj zmienić warunki w zapytaniach i zobacz, jak zmienia się wynik.</p>
       </section>
-            <section>
+      <section>
         <section>
           <h1>Zadania 7.1-7.5 z użyciem SQL</h1>
         </section>
@@ -1599,7 +1595,8 @@ ORDER BY o.nazwa_obszaru;
             <div class="slide small-text">
               <h3>🎯 Cel</h3>
               <p>Znajdź łaziki, które <strong>wylądowały na południu</strong> i wykonywały pomiary zarówno na
-                <strong>półkuli północnej</strong>, jak i <strong>południowej</strong>.</p>
+                <strong>półkuli północnej</strong>, jak i <strong>południowej</strong>.
+              </p>
             </div>
 
             <!-- Slajd 2 -->
@@ -1717,7 +1714,8 @@ HAVING SUM(IIF(p.wspolrzedne LIKE "*N*", 1, 0)) > 0
             <div class="slide small-text">
               <h3>🎯 Cel</h3>
               <p>Znajdź producentów łazików, które wykonywały pomiary w <strong>obszarze Arcadia</strong> w roku
-                <strong>2060</strong>.</p>
+                <strong>2060</strong>.
+              </p>
             </div>
 
             <!-- Slajd 2 -->
@@ -1824,7 +1822,7 @@ ORDER BY pr.nazwa;
       hash: true,
       slideNumber: true,
       transition: 'slide',
-      plugins: [ RevealNotes ]
+      plugins: [RevealNotes]
     });
   </script>
 
