@@ -1,0 +1,223 @@
+zadanie 2.:
+
+Napisz program, który przelicza temperaturę z stopni Celsjusza na stopnie Fahrenheita. Program powinien wczytać jedną liczbę (temperaturę w stopniach Celsjusza), a następnie obliczyć odpowiednią wartość w stopniach Fahrenheita i wypisać wynik. 
+
+Wzór przeliczenia: F = C * 9/5 + 32. 
+
+Przykład:
+
+Wejście:
+
+0
+Wyjście:
+
+32.0
+
+zadanie 1.:
+
+Napisz program, który wczytuje n (maksymalnie 100) oraz n liczb całkowitych, a następnie zlicza i wypisuje ile z nich jest większych od zera.
+
+Przykład
+
+Wejście:
+6
+-1 0 2 3 -5 4
+Wyjście:
+3
+
+Zadanie 6. Fotowoltaika
+Pan Iksiński założył panele fotowoltaiczne i przez rok monitorował wykorzystanie energii
+w swoim gospodarstwie domowym. Prąd wytworzony przez panele jest zużywany na bieżące
+potrzeby gospodarstwa domowego, a jego nadmiar jest przesyłany do zakładu
+energetycznego. W razie braku wystarczającej ilości energii pochodzącej z paneli (np.
+w godzinach nocnych lub przy pochmurnej pogodzie) energia jest pobierana z zakładu
+energetycznego.
+W kolejnych wierszach pliku fotowoltaika.txt są zawarte następujące informacje,
+rozdzielone znakami tabulacji:
+data – data pomiaru
+wsch – godzina wschodu słońca
+zach – godzina zachodu słońca
+st_zach – stopień zachmurzenia (liczba całkowita od 0 do 8, przy czym liczba 0
+oznacza brak zachmurzenia, natomiast liczba 8 – całkowite zachmurzenie)
+produkcja – energia wyprodukowana przez całą dobę przez panele fotowoltaiczne
+(w kWh)
+oddanie – energia oddana do zakładu energetycznego przez całą dobę (w kWh)
+pobranie – energia pobrana z zakładu przez gospodarstwo domowe przez całą dobę
+(w kWh).
+Przykład:
+data wsch zach st_zach produkcja oddanie pobranie
+2022-01-01 07:42:56 15:36:07 0 7,78 3,29 4,56
+2022-01-02 07:42:47 15:37:12 4 4,47 1,23 3,99
+Z wykorzystaniem powyższych danych oraz dostępnych narzędzi informatycznych wykonaj
+podane zadania. Wyniki zapisz w pliku tekstowym wyniki6.txt. Odpowiedź do każdego
+zadania poprzedź numerem tego zadania.
+Zadanie 6.1. (0–2)
+Podaj, ile energii łącznie (w kWh) zużył pan Iksiński przez cały rok 2022. Zużywana energia
+to suma energii pobranej z zakładu energetycznego i energii wyprodukowanej przez pana
+Iksińskiego pomniejszonej o ilość oddaną do zakładu energetycznego.
+Uwaga: Przez cały styczeń pan Iksiński zużył 162,68 kWh.
+
+Zadanie 6.3. (0–3)
+Dla każdego dnia oblicz czas nasłonecznienia w godzinach (czyli czas od wschodu do
+zachodu słońca). Wynik zaokrąglij w dół do liczby całkowitej.
+Utwórz zestawienie, w którym dla każdej liczby godzin nasłonecznienia podasz średnie
+ilości wyprodukowanej energii, oddanej energii i pobranej energii. Na podstawie wykonanego
+zestawienia utwórz wykres liniowy porównujący te wartości w całym roku. Pamiętaj
+o czytelnym opisie wykresu (tytuł, legenda, tytuły osi).
+Przykład.
+Dla fragmentu danych:
+data wsch zach st_zach produkcja oddanie pobranie
+2022-01-01 07:42:56 15:36:07 0 7,78 3,29 4,56
+2022-01-02 07:42:47 15:37:12 4 4,47 1,23 3,99
+2022-01-03 07:42:35 15:38:20 4 6,02 4,74 2,56
+2022-01-04 07:42:19 15:39:30 6 2,63 1,22 5,22
+2022-01-05 07:42:00 15:40:43 2 7,99 5,68 4,22
+2022-01-06 07:41:38 15:41:58 3 4,65 3,24 2,57
+2022-01-07 07:41:12 15:43:16 1 7,91 2,34 2,22
+2022-01-08 07:40:43 15:44:36 1 7,24 2,58 2,47
+2022-01-09 07:40:11 15:45:59 1 7,96 2,74 1,95
+w dniach od 1 do 5 stycznia nasłonecznie trwa 7 godzin (po zaokrągleniu w dół do liczby
+całkowitej), a od 6 do 9 stycznia – 8 godzin (również po odpowiednim zaokrągleniu). 
+
+
+Zadanie 7. Energia odnawialna
+W kolejnych wierszach pliku energia.txt znajdują się dane o produkcji energii ze źródeł
+odnawialnych (wiatrowych i fotowoltaicznych). Każdy wiersz zawiera oddzielone znakami
+tabulacji informacje o dacie, o godzinie oraz o liczbie megawatogodzin (MWh)
+wyprodukowanych przez źródła wiatrowe, a także liczbie megawatogodzin
+wyprodukowanych przez źródła fotowoltaiczne w kwietniu 20241
+. Dane są podane
+chronologicznie i nie zawierają luk (są podane dla każdego dnia i dla każdej godziny).
+Fragment pliku:
+Data Godzina Zrodla_
+wiatrowe
+Zrodla_
+fotowoltaiczne
+2024-04-01 1 3130,263 0,000
+2024-04-01 2 2765,588 0,000
+2024-04-01 3 2555,438 0,000
+2024-04-01 4 2675,238 0,000
+2024-04-01 5 2681,175 0,000
+2024-04-01 6 2367,325 0,213
+2024-04-01 7 2525,225 117,075
+2024-04-01 8 2360,988 1162,075
+2024-04-01 9 1940,838 2680,513
+Z wykorzystaniem opisanych danych oraz dostępnych narzędzi informatycznych wykonaj
+następujące zadania. Wyniki zapisz w pliku tekstowym wyniki7.txt. Odpowiedź do
+każdego zadania poprzedź numerem zadania.
+
+Zadanie 7.1. (0–2)
+Podaj dzień, w którym łącznie wytworzono najwięcej MWh energii ze źródeł wiatrowych, oraz
+dzień, w którym łącznie wytworzono najwięcej MWh energii ze źródeł fotowoltaicznych
+w badanym okresie. W obu podanych kategoriach jest tylko jeden taki dzień.
+Zadanie 7.2. (0–3)
+Podaj dla każdej godziny w dobie (od 1 do 24) średnią liczbę wyprodukowanych MWh
+energii ze źródeł fotowoltaicznych w tej godzinie w kwietniu. Podaj wyniki z dokładnością do
+dwóch miejsc po przecinku. Dla tego zestawienia wykonaj wykres kolumnowy. Wstaw tytuł
+wykresu i opisz osie.
+
+Zadanie 8. Szczepienia
+W pewnym centrum medycznym odbywają się szczepienia. Lekarz przepisuje pacjentowi
+odpowiednią szczepionkę, a każda szczepionka ma rekomendowaną liczbę dawek. Pacjent
+zostaje uznany za zaszczepionego, jeśli przyjmie wszystkie dawki rekomendowane dla danej
+szczepionki.
+Dane dotyczące szczepień od 2 stycznia 2023 do 7 maja 2024 są zapisane w dwóch plikach:
+szczepionki.txt oraz wizyty.txt. Pierwszy wiersz w każdym pliku jest wierszem
+nagłówkowym i zawiera nazwy odpowiednich pól. Dane w wierszach rozdzielone są znakiem
+tabulacji.
+Plik o nazwie szczepionki.txt zawiera informacje o szczepionkach. W każdym wierszu
+znajduje się:
+kod_szczepionki – tekst do 10 znaków, określający jednoznacznie szczepionkę
+liczba_dawek – liczba rekomendowanych dawek, liczba całkowita większa od 0
+i mniejsza od 10
+Przykład:
+kod_szczepionki liczba_dawek
+sz1_3d 3
+sz2_1d 1
+Plik o nazwie wizyty.txt zawiera informacje o podanej pacjentowi dawce szczepionki.
+W każdym wierszu znajduje się:
+pesel – numer PESEL pacjenta przyjmującego daną dawkę szczepienia,
+składający się z 11 znaków
+kod_szczepionki – kod podanej szczepionki
+data_szczepienia – data szczepienia w formacie rrrr-mm-dd
+numer_dawki – liczba całkowita mniejsza od 10 określająca, która dawka
+szczepionki została podana.
+Przykład:
+Pesel kod_szczepionki data_szczepienia numer_dawki
+79051863861 sz16_1d 2023-01-02 1
+84100517145 sz13_5d 2023-01-02 1
+Z wykorzystaniem danych zawartych w podanych plikach oraz dostępnych narzędzi
+informatycznych podaj odpowiedzi do zadań 8.1.–8.3. Odpowiedzi zapisz w pliku
+wyniki8.txt, a każdą z nich poprzedź numerem odpowiedniego zadania.
+Zadanie 8.1. (0–2)
+Dla każdej szczepionki podaj, ile łącznie jej dawek zostało podanych pacjentom. Jako wynik
+podaj listę zawierającą kod szczepionki i liczbę dawek. Lista powinna być posortowana
+nierosnąco według liczby dawek.
+
+Zadanie 8.2. (0–3)
+Podaj, ilu różnych pacjentów przyjęło przynajmniej jedną dawkę szczepionki o kodzie
+sz12_3d. Podaj, ile wśród nich było kobiet (płeć określa przedostatnia cyfra numeru PESEL,
+cyfra parzysta oznacza płeć żeńską).
+
+Zadanie 7. Instalacje
+W bazie danych firmy X zawarte są informacje o instalacjach pewnej aplikacji,
+o urządzeniach, na których ta aplikacja została zainstalowana, oraz o krajach, w których
+przeprowadzono instalację.
+Dane zgromadzono w plikach tekstowych: kraje.txt, instalacje.txt oraz
+urzadzenia.txt. Pierwszy wiersz każdego z plików jest wierszem nagłówkowym,
+a dane w wierszach rozdzielone są znakami tabulacji.
+Plik o nazwie kraje.txt zawiera informacje o krajach, w których instalowano aplikację.
+W każdym wierszu pliku znajdują się następujące dane:
+kod_k – kod kraju (napis dwuznakowy)
+nazwa_k – nazwa kraju (napis do 50 znaków)
+ludnosc_k – ludność kraju (liczba całkowita do 10 cyfr określająca liczbę ludności).
+Przykład:
+kod_k nazwa_k ludnosc_k
+AN NETHERLANDS ANTILES 227049
+CR COSTA RICA 5003393
+DZ ALGERIA 42545964
+
+
+Plik o nazwie urzadzenia.txt zawiera informacje o urządzeniach, na których może być
+instalowana aplikacja. W każdym wierszu pliku znajdują się następujące informacje:
+kod_u – unikatowy kod (liczba całkowita co najwyżej 5-cyfrowa)
+nazwa_u – nazwa urządzenia (napis do 80 znaków)
+producent_u – producent urządzenia (napis do 35 znaków)
+typ_u – typ urządzenia (napis: Tablet, Phone lub PC).
+Uwaga: nazwa urządzenia nie jest unikatowa – w tabeli mogą występować dwa lub więcej
+urządzenia o tej samej nazwie.
+Przykład:
+kod_u nazwa_u producent_u typ_u
+12410 PLATINUM_E5 Sky Devices Phone
+6549 Ilium L1120 Lanix Phone
+Plik o nazwie instalacje.txt zawiera informacje o instalacjach aplikacji. W każdym
+wierszu pliku znajdują się następujące informacje:
+data_i – data instalacji (w formacie dd.mm.rrrrr)
+kod_u – kod urządzenia, na którym była wykonana instalacja (liczba całkowita co
+najwyżej 5-cyfrowa)
+kod_k – kod kraju, w którym znajdowało się to urządzenie (napis dwuznakowy).
+Uwaga: kod_u nie oznacza pojedynczego egzemplarza urządzenia, a tylko jego rodzaj – to
+znaczy na urządzeniach o tym samym kodzie może być wykonanych wiele instalacji.
+Przykład:
+data_i kod_k kod_u
+01.03.2019 AM 145
+01.03.2019 AR 804
+01.03.2019 AT 12632
+Z wykorzystaniem danych zawartych w podanych plikach oraz dostępnych narzędzi
+informatycznych, podaj odpowiedzi do zadań 7.1.–7.4. Odpowiedzi zapisz w pliku
+wyniki7.txt, a każdą z nich poprzedź numerem odpowiedniego zadania.
+
+Zadanie 7.1. (0–2)
+Dla każdego typu urządzenia podaj liczbę instalacji aplikacji na tym typie urządzenia.
+
+Zadanie 7.3. (0–3)
+Podaj nazwy pięciu krajów, w których przeprowadzono najwięcej instalacji w przeliczeniu na
+1 000 000 mieszkańców, oraz podaj liczby tych instalacji.
+Dla każdego z tych pięciu krajów podaj liczbę instalacji na 1 000 000 mieszkańców
+z dokładnością do dwóch miejsc po przecinku.
+Uwaga: pomiń kraje, w których jest mniej niż milion mieszkańców.
+
+https://arkusze.pl/matura-informatyka-2025-czerwiec-poziom-rozszerzony/
+https://arkusze.pl/matura-probna-informatyka-2024-grudzien-poziom-rozszerzony/
+https://arkusze.pl/matura-informatyka-2024-czerwiec-poziom-rozszerzony/
+https://arkusze.pl/matura-informatyka-2023-czerwiec-poziom-rozszerzony/
