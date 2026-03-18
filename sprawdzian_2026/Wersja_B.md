@@ -27,16 +27,16 @@ W kolejnych wierszach pliku `energia.txt` znajdują się dane o produkcji energi
 
 **Fragment pliku:**
 ```text
-DataGodzinaZrodla_wiatroweZrodla_fotowoltaiczne
-2024-04-0113130,2630,000
-2024-04-0122765,5880,000
-2024-04-0132555,4380,000
-2024-04-0142675,2380,000
-2024-04-0152681,1750,000
-2024-04-0162367,3250,213
-2024-04-0172525,225117,075
-2024-04-0182360,9881162,075
-2024-04-0191940,8382680,513
+Data	Godzina	Zrodla_wiatrowe	Zrodla_fotowoltaiczne
+2024-04-01	1	3130,263	0,000
+2024-04-01	2	2765,588	0,000
+2024-04-01	3	2555,438	0,000
+2024-04-01	4	2675,238	0,000
+2024-04-01	5	2681,175	0,000
+2024-04-01	6	2367,325	0,213
+2024-04-01	7	2525,225	117,075
+2024-04-01	8	2360,988	1162,075
+2024-04-01	9	1940,838	2680,513
 ```
 
 Z wykorzystaniem opisanych danych oraz dostępnych narzędzi informatycznych wykonaj następujące zadania. Wyniki zapisz w pliku tekstowym `wyniki2.txt`. Odpowiedź do każdego zadania poprzedź numerem zadania.
@@ -60,9 +60,9 @@ Plik o nazwie `szczepionki.txt` zawiera informacje o szczepionkach. W każdym wi
 
 **Przykład:**
 ```text
-kod_szczepionkiliczba_dawek
-sz1_3d3
-sz2_1d1
+kod_szczepionki	liczba_dawek
+sz1_3d	3
+sz2_1d	1
 ```
 
 Plik o nazwie `wizyty.txt` zawiera informacje o podanej pacjentowi dawce szczepionki. W każdym wierszu znajduje się:
@@ -73,9 +73,9 @@ Plik o nazwie `wizyty.txt` zawiera informacje o podanej pacjentowi dawce szczepi
 
 **Przykład:**
 ```text
-Peselkod_szczepionkidata_szczepienianumer_dawki
-79051863861sz16_1d2023-01-021
-84100517145sz13_5d2023-01-021
+Pesel	kod_szczepionki	data_szczepienia	numer_dawki
+79051863861	sz16_1d	2023-01-02	1
+84100517145	sz13_5d	2023-01-02	1
 ```
 
 Z wykorzystaniem danych zawartych w podanych plikach oraz dostępnych narzędzi informatycznych podaj odpowiedzi do zadań 3.1.–3.2. Odpowiedzi zapisz w pliku `wyniki3.txt`, a każdą z nich poprzedź numerem odpowiedniego zadania.

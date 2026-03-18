@@ -35,9 +35,9 @@ W kolejnych wierszach pliku `fotowoltaika.txt` są zawarte następujące informa
 
 **Przykład:**
 ```text
-datawschzachst_zachprodukcjaoddaniepobranie
-2022-01-0107:42:5615:36:0707,783,294,56
-2022-01-0207:42:4715:37:1244,471,233,99
+data	wsch	zach	st_zach	produkcja	oddanie	pobranie
+2022-01-01	07:42:56	15:36:07	0	7,78	3,29	4,56
+2022-01-02	07:42:47	15:37:12	4	4,47	1,23	3,99
 ```
 
 Z wykorzystaniem powyższych danych oraz dostępnych narzędzi informatycznych wykonaj podane zadania. Wyniki zapisz w pliku tekstowym `wyniki2.txt`. Odpowiedź do każdego zadania poprzedź numerem tego zadania.
@@ -54,16 +54,16 @@ Utwórz zestawienie, w którym dla każdej liczby godzin nasłonecznienia podasz
 **Przykład.**
 Dla fragmentu danych:
 ```text
-datawschzachst_zachprodukcjaoddaniepobranie
-2022-01-0107:42:5615:36:0707,783,294,56
-2022-01-0207:42:4715:37:1244,471,233,99
-2022-01-0307:42:3515:38:2046,024,742,56
-2022-01-0407:42:1915:39:3062,631,225,22
-2022-01-0507:42:0015:40:4327,995,684,22
-2022-01-0607:41:3815:41:5834,653,242,57
-2022-01-0707:41:1215:43:1617,912,342,22
-2022-01-0807:40:4315:44:3617,242,582,47
-2022-01-0907:40:1115:45:5917,962,741,95
+data	wsch	zach	st_zach	produkcja	oddanie	pobranie
+2022-01-01	07:42:56	15:36:07	0	7,78	3,29	4,56
+2022-01-02	07:42:47	15:37:12	4	4,47	1,23	3,99
+2022-01-03	07:42:35	15:38:20	4	6,02	4,74	2,56
+2022-01-04	07:42:19	15:39:30	6	2,63	1,22	5,22
+2022-01-05	07:42:00	15:40:43	2	7,99	5,68	4,22
+2022-01-06	07:41:38	15:41:58	3	4,65	3,24	2,57
+2022-01-07	07:41:12	15:43:16	1	7,91	2,34	2,22
+2022-01-08	07:40:43	15:44:36	1	7,24	2,58	2,47
+2022-01-09	07:40:11	15:45:59	1	7,96	2,74	1,95
 ```
 w dniach od 1 do 5 stycznia nasłonecznie trwa 7 godzin (po zaokrągleniu w dół do liczby całkowitej), a od 6 do 9 stycznia – 8 godzin (również po odpowiednim zaokrągleniu). 
 
@@ -81,10 +81,10 @@ Plik o nazwie `kraje.txt` zawiera informacje o krajach, w których instalowano a
 
 **Przykład:**
 ```text
-kod_knazwa_kludnosc_k
-ANNETHERLANDS ANTILES227049
-CRCOSTA RICA5003393
-DZALGERIA42545964
+kod_k	nazwa_k	ludnosc_k
+AN	NETHERLANDS ANTILES	227049
+CR	COSTA RICA	5003393
+DZ	ALGERIA	42545964
 ```
 
 Plik o nazwie `urzadzenia.txt` zawiera informacje o urządzeniach, na których może być instalowana aplikacja. W każdym wierszu pliku znajdują się następujące informacje:
@@ -96,9 +96,9 @@ Plik o nazwie `urzadzenia.txt` zawiera informacje o urządzeniach, na których m
 
 **Przykład:**
 ```text
-kod_unazwa_uproducent_utyp_u
-12410PLATINUM_E5Sky DevicesPhone
-6549Ilium L1120LanixPhone
+kod_u	nazwa_u	producent_u	typ_u
+12410	PLATINUM_E5	Sky Devices	Phone
+6549	Ilium L1120	Lanix	Phone
 ```
 
 Plik o nazwie `instalacje.txt` zawiera informacje o instalacjach aplikacji. W każdym wierszu pliku znajdują się następujące informacje:
@@ -109,10 +109,10 @@ Plik o nazwie `instalacje.txt` zawiera informacje o instalacjach aplikacji. W ka
 
 **Przykład:**
 ```text
-data_ikod_kkod_u
-01.03.2019AM145
-01.03.2019AR804
-01.03.2019AT12632
+data_i	kod_k	kod_u
+01.03.2019	AM	145
+01.03.2019	AR	804
+01.03.2019	AT	12632
 ```
 
 Z wykorzystaniem danych zawartych w podanych plikach oraz dostępnych narzędzi informatycznych, podaj odpowiedzi do zadań 3.1.–3.2. Odpowiedzi zapisz w pliku `wyniki3.txt`, a każdą z nich poprzedź numerem odpowiedniego zadania.
